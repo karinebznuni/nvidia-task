@@ -1,0 +1,12 @@
+<table>
+  <tbody>
+    <tr *ngFor="let row of matrix;">
+      <td *ngFor="let brick of row;">
+        <app-n-brick
+          [brick]="brick"
+          (invert)="invertBrick($event)"
+        ></app-n-brick>
+      </td>
+    </tr>
+  </tbody>
+</table>

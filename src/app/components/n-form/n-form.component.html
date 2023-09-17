@@ -1,0 +1,15 @@
+<form [formGroup]="wallForm" (ngSubmit)="drawWall()">
+  <div class="mb-3">
+    <label for="n-width" class="form-label">Width</label>
+    <input formControlName="width" type="number" class="form-control" id="n-width" />
+  </div>
+  <div class="mb-3">
+    <label for="n-height" class="form-label">Height</label>
+    <input formControlName="height" type="number" class="form-control" id="n-height" />
+  </div>
+  <div class="mb-3">
+    <label for="n-colors-count" class="form-label">Colors count</label>
+    <input formControlName="colorsCount" type="number" class="form-control" id="n-colors-count" />
+  </div>
+  <button type="submit" class="btn btn-primary">Draw</button>
+</form>
